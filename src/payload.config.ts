@@ -6,6 +6,8 @@ import { webpackBundler } from "@payloadcms/bundler-webpack";
 import path from "path";
 import { Users } from "./collections/Users";
 import dotenv from "dotenv"
+import { Coaches } from "./collections/Coaches/Coaches";
+import { Media } from "./collections/Coaches/Media";
 
 dotenv.config({
     path: path.resolve(__dirname, "../.env")
@@ -13,7 +15,7 @@ dotenv.config({
 
 export default buildConfig({
     serverURL: process.env.NEXT_PUBLIC_SERVER_URL || '',
-    collections: [Users],
+    collections: [Users, Coaches, Media,],
     routes: {
         admin: '/sell'
     },

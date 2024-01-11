@@ -1,7 +1,7 @@
 export const COACH_CATEGORIES = [
   {
-    label: "Coaches",
-    value: "Coaches" as const,
+    label: "Comics",
+    value: "comics" as const,
     featured: [
       {
         name: "Editor picks",
@@ -21,8 +21,8 @@ export const COACH_CATEGORIES = [
     ],
   },
   {
-    label: "Training Plans",
-    value: "training_plans" as const,
+    label: "Manga",
+    value: "manga" as const,
     featured: [
       {
         name: "Favorite icon picts",
@@ -41,4 +41,4 @@ export const COACH_CATEGORIES = [
       },
     ],
   },
-]
+];

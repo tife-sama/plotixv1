@@ -10,7 +10,7 @@ import {
   SheetTrigger,
 } from "./ui/sheet";
 import { Separator } from "./ui/separator";
-import { formatPrice } from "@/lib/utils";
+import {} from "@/lib/utils";
 import { buttonVariants } from "./ui/button";
 import Link from "next/link";
 import Image from "next/image";
