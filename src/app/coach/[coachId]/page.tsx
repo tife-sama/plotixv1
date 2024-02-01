@@ -40,6 +40,7 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover";
 import CoachCTACardLG from "@/components/CoachCTACardLG";
+import Image from "next/image";
 
 interface PageProps {
   params: {
@@ -180,7 +181,7 @@ const Page = async ({ params }: PageProps) => {
                   coach.workHistory.map((workHistoryItem, index) => (
                     <div key={index} className="mb-4 mt-2">
                       <Badge variant={"outline"}>
-                        <img
+                        <Image
                           alt={`${workHistoryItem.companyName} Logo`}
                           loading="lazy"
                           width="16"

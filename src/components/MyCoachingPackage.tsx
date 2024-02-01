@@ -24,6 +24,7 @@ import { Coaches } from "@/collections/Coaches/Coaches";
 import { formatPrice } from "@/lib/utils";
 import { Button } from "./ui/button";
 import { Ghost } from "lucide-react";
+import Image from "next/image";
 
 const MyCoachingPackage = ({ coachingPackages }) => {
   const [enlargedIndex, setEnlargedIndex] = useState(null);
@@ -58,7 +59,7 @@ const MyCoachingPackage = ({ coachingPackages }) => {
                   <CardContent className="flex items-start justify-center p-2 h-[200px]">
                     {" "}
                     {/* Set a fixed height for card content */}
-                    <img
+                    <Image
                       src={item.coachingPackagePicture?.url}
                       alt={`Coaching Package ${index + 1}`}
                       className="w-full h-full object-cover rounded-md"
@@ -90,7 +91,7 @@ const MyCoachingPackage = ({ coachingPackages }) => {
             </SheetHeader>
             <SheetDescription>
               <div>
-                <img
+                <Image
                   src={
                     coachingPackages[enlargedIndex].coachingPackagePicture?.url
                   }

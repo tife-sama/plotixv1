@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const MyWorkExperience = ({ workHistory }) => {
@@ -11,7 +12,7 @@ const MyWorkExperience = ({ workHistory }) => {
       {workHistory.map((workHistoryItem, index) => (
         <div key={index} className="mb-4 mt-2">
           <div className="flex items-center space-x-4 mb-8">
-            <img
+            <Image
               alt={`${workHistoryItem.companyName} Logo`}
               loading="lazy"
               width=""

@@ -7,6 +7,7 @@ import { cn, formatPrice } from "@/lib/utils";
 import { COACH_CATEGORIES } from "@/config";
 import ImageSlider from "./ImageSlider";
 import { Badge } from "@/components/ui/badge";
+import Image from "next/image";
 
 interface CoachListingProps {
   coaches: Coaches;
@@ -122,7 +123,7 @@ const CoachListing: React.FC<CoachListingProps> = ({ coaches, index }) => {
                         <div className="relative mr-2">
                           {workHistoryItem.companyName && (
                             <Badge variant={"outline"}>
-                              <img
+                              <Image
                                 alt={`${workHistoryItem.companyName} Logo`}
                                 loading="lazy"
                                 width=""

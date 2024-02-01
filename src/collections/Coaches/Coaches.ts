@@ -240,7 +240,7 @@ export const Coaches: CollectionConfig = {
 
     {
       name: "FAQs",
-      label: "FAQ's",
+      label: "FAQs",
       type: "array",
       minRows: 2,
       maxRows: 6,

@@ -1,4 +1,5 @@
 // ImageSlider.tsx
+import Image from "next/image";
 import React from "react";
 
 interface ImageSliderProps {
@@ -10,7 +11,7 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ urls }) => {
     <div className="relative  w-full overflow-hidden rounded-t-2xl transform transition-transform hover:scale-105">
       <div className="w-full overflow-hidden h-44">
         {urls.map((url, index) => (
-          <img
+          <Image
             key={index}
             src={url}
             alt={`Image ${index + 1}`}

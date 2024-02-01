@@ -18,6 +18,7 @@ import {
 } from "@/components/ui/alert-dialog";
 import { AlertDialogOverlay } from "@radix-ui/react-alert-dialog";
 import { Close } from "lucide-react";
+import Image from "next/image";
 
 const MyCarousel = ({ portfolios }) => {
   const [enlargedIndex, setEnlargedIndex] = useState(null);
@@ -51,7 +52,7 @@ const MyCarousel = ({ portfolios }) => {
               >
                 <div className="aspect-w-1 aspect-h-2">
                   <div className="w-full h-full">
-                    <img
+                    <Image
                       src={item.media?.sizes?.thumbnail?.url}
                       alt={`Portfolio Item ${index + 1}`}
                       className="w-full h-full rounded-lg"
@@ -77,7 +78,7 @@ const MyCarousel = ({ portfolios }) => {
             </AlertDialogHeader>
             <AlertDialogDescription>
               <div>
-                <img
+                <Image
                   src={portfolios[enlargedIndex].media?.url}
                   alt={`Portfolio Item ${enlargedIndex + 1}`}
                   className="max-w-full h-auto mb-3"
